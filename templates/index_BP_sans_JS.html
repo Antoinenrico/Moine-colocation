@@ -1,0 +1,52 @@
+<html>
+<style>
+    .box{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    button{
+        background-color: #4FC3F7;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 4px 6px 0px rgba(0,0,0,0.5);
+        color:#FFF;
+        font-family: monospace;
+        font-size: 10em;
+        padding: 30px;
+        outline: none;
+        cursor:pointer;
+        transition: 0.2s;
+    }
+    button:hover{
+        transform: scale(1.01);
+        box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.48);    
+    }
+    button:active{
+        transform: scale(0.98);
+        box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.62); 
+        background-color: #C6FF00;
+    }
+
+</style>    
+    
+    
+<head>
+<link rel="stylesheet" href='/static/style.css' />
+<script src="index.js"></script>
+</head>
+<body>
+    <div class="box">
+        <button>Moine</button>
+    </div>
+    <script type="text/javascript">
+        $(document).on('click', 'moine', function(){
+            $(this).addClass('activate')
+        })
+    </script>
+
+    
+    </body>
+</html>
